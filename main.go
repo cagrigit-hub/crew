@@ -2,6 +2,7 @@ package main
 
 // DEV ENV.
 func main() {
-	println("Hello, World!")
+	fFetcher := FakeFetcher{}
+	ConcurrentChannel("http://golang.org/", &fFetcher)
 	// test
 }
